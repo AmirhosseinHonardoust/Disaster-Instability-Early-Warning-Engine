@@ -1,5 +1,5 @@
 # Disaster Instability Early Warning Engine
-   
+    
 <p align="center">
 
   <img src="https://img.shields.io/badge/Project-Disaster_Instability_EWS-7B1FA2?style=for-the-badge" />
