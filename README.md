@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/ML-Escalation_Risk_Model-purple?style=for-the-badge" />
 
 </p>
-
+ 
 > **Hazards become disasters when buffering capacity collapses under accumulated pressure.**
 > This project models disaster escalation as a **transition**, not as a one-off event.
 
