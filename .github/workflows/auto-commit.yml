@@ -1,7 +1,8 @@
 name: Auto Commit
+
 on:
   schedule:
-    - cron: '0 0,3,6,9,12,14,16,18,20,22 * * *'  # 10 times/day
+    - cron: '0 0,3,6,9,12,14,16,18,20,22 * * *'  # ~10 times/day, UTC
   workflow_dispatch:
 
 permissions:
@@ -12,12 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Make a change
-        run: echo "$(date)" >> activity.log
+        run: echo "$(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> activity.log
+
       - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "AmirhosseinHonardoust"
+          git config user.email "YOUR_ID+AmirhosseinHonardoust@users.noreply.github.com"
           git add activity.log
           git commit -m "chore: automated update $(date +%F-%H%M)" || echo "Nothing to commit"
           git push
