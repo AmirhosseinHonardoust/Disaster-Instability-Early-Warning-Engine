@@ -1,7 +1,7 @@
 # Disaster Instability Early Warning Engine
  
 <p align="center">
-  
+   
   <img src="https://img.shields.io/badge/Project-Disaster_Instability_EWS-7B1FA2?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Domain-Disaster_Analytics-0277BD?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Focus-Early_Warning_Not_Prediction-D84315?style=for-the-badge" />
